@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272176ac-3eb9-4a1a-9ca7-d97305ef3632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auditoria-condominial.html" beforeDir="false" afterPath="$PROJECT_DIR$/auditoria-condominial.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestao-imobiliaria.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestao-imobiliaria.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contabilidade-empresarial.html" beforeDir="false" afterPath="$PROJECT_DIR$/contabilidade-empresarial.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legalizacao-empresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/legalizacao-empresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/links-uteis.html" beforeDir="false" afterPath="$PROJECT_DIR$/links-uteis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obrigacoes-acessorias.html" beforeDir="false" afterPath="$PROJECT_DIR$/obrigacoes-acessorias.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753076357774</updated>
       <workItem from="1753076358906" duration="37692000" />
-      <workItem from="1753197160025" duration="2219000" />
+      <workItem from="1753197160025" duration="2716000" />
     </task>
     <servers />
   </component>
