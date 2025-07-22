@@ -225,7 +225,7 @@ nav a:hover {
   background: var(--primary-green);
   color: var(--white);
   padding: 0.75rem 2rem;
-  border-radius: 30px;
+  border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
   margin-top: 1.5rem;
@@ -1103,6 +1103,7 @@ nav a:hover {
   background: var(--primary-green);
 }
 
+
 //* Lightbox Gallery */
 .lightbox {
     display: none;
@@ -1325,6 +1326,36 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 0.8rem; /* Slightly smaller font size */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+@media (max-width: 768px) {
+  /* Center the detail button on mobile */
+  .detail-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content; /* or max-width: 200px; if you want to limit width */
+  }
+
+  /* If the button is in a text container, you might also need: */
+  .about-text,
+  .content-box,
+  .contact-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Center the detail button on mobile */
+  .service-tag {
+    display: block;
+    margin-left: auto;
+    margin-top:auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    width: fit-content; /* or max-width: 200px; if you want to limit width */
   }
 }
