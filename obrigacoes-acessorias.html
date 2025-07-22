@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Muniz Contador - Obrigações Acessórias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #3a7d44; /* Green from reference */
+            --secondary: #f8f9fa;
+            --dark: #343a40;
+            --light: #ffffff;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: var(--light);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--secondary);
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Service Hero */
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://blogdaqualidade.com.br/wp-content/uploads/2019/01/entenda-os-principais-tipos-de-auditoria.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            padding: 3rem 0;
+            background: var(--secondary);
+        }
+
+        .service-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 3rem 0;
+        }
+
+        .service-content .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .content-left h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .content-right h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: var(--secondary);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .tool-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-content .container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Replace with hamburger menu in production */
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <div class="container">
+        <div class="logo">Walter<span> Contador</span></div>
+        <ul class="nav-links">
+            <li><a href="/contabilidade_walter/index.html">HOME</a></li>
+            <li><a href="/contabilidade_walter/index.html#about">SOBRE</a></li>
+            <li><a href="/contabilidade_walter/index.html#services">SERVIÇOS</a></li>
+            <li><a href="/contabilidade_walter/index.html#footer">PÁGINAS</a></li>
+            <li><a href="/contabilidade_walter/galeria.html">GALERIA</a></li>
+            <li><a href="/contabilidade_walter/index.html#contact">CONTATO</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="/contabilidade_walter/index.html">Home</a> / <a href="/contabilidade_walter/index.html#services">Nossos Serviços</a>
+    </div>
+</div>
+
+<!-- Service Hero -->
+<section class="service-hero">
+    <div class="container">
+        <h1>OBRIGAÇÕES ACESSÓRIAS</h1>
+        <p class="subtitle">O Cumprimento Detalhado que Garante a Conformidade Fiscal e Legal da sua Empresa</p>
+    </div>
+</section>
+
+<!-- Service Grid -->
+<section class="service-grid">
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>ANÁLISE COMPLETA</h3>
+            <p>Nós fazemos com cuidado histórico completo!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>GESTÃO FINANCEIRA</h3>
+            <p>Nós amamos o que fazemos!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>AUDITORIA CONDONMINIAL</h3>
+            <p>Fazemos para seus condomínios e empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="service-content">
+    <div class="container">
+        <div class="content-right">
+            <h2>Especialistas em Obrigações Acessórias</h2>
+            As obrigações acessórias são o conjunto de declarações, relatórios e documentos que as empresas e pessoas físicas precisam entregar aos órgãos fiscalizadores (principalmente Receita Federal, Secretarias de Fazenda Estaduais e Prefeituras Municipais) para informar operações que geraram ou que estão relacionadas com o cálculo de tributos e outras exigências legais. O objeto de atuação principal das obrigações acessórias é complementar e detalhar as obrigações tributárias principais (o pagamento dos impostos em si), permitindo que o fisco controle, fiscalize e verifique se os impostos foram calculados e recolhidos corretamente, além de coletar dados para análises econômicas e estatísticas.
+            <p></p>
+            1. Informação e Detalhamento das Operações Fiscais<p></p>
+            As obrigações acessórias servem como um "raio-X" das operações da empresa. Elas detalham:
+            <p></p>
+            .Movimentação de Mercadorias e Serviços: Quem vendeu, quem comprou, o quê, quando, por quanto e onde.
+            <p></p>
+            .Receitas e Despesas: O faturamento da empresa, os custos operacionais, despesas financeiras, etc.
+            <p></p>
+            .Dados dos Contribuintes: Identificação de fornecedores, clientes e colaboradores.
+            <p></p>
+            .Impostos Calculados: Como os tributos foram apurados, as bases de cálculo utilizadas e os valores devidos.
+            <p></p>
+            Essa riqueza de detalhes permite que o governo tenha uma visão clara da saúde fiscal e econômica das empresas e do país como um todo.
+            <p></p>
+            2. Controle e Fiscalização da Arrecadação Tributária<p></p>
+            Para o governo, as obrigações acessórias são ferramentas cruciais de controle:
+            <p></p>
+            Cruzamento de Informações: O fisco compara os dados enviados por diferentes empresas e fontes (por exemplo, o que uma empresa declara como venda deve bater com o que a outra declara como compra) para identificar inconsistências, sonegação ou erros.
+            <p></p>
+            Base para Auditorias: As declarações servem como ponto de partida para investigações e auditorias fiscais, onde o detalhamento é exigido e verificado.
+            <p></p>
+            Análise de Dados: Permitem análises macroeconômicas sobre setores, consumo, investimentos, etc.
+            <p></p>
+            3. Formalização do Cumprimento da Legislação<p></p>
+            As obrigações acessórias são a prova de que a empresa está em dia com suas responsabilidades:
+            <p></p>
+            .Comprovação de Pagamento: Mesmo que um imposto seja pago, a obrigação acessória é o documento que formaliza e detalha a apuração desse imposto.
+            <p></p>
+            .Atualização Cadastral: Muitas delas incluem dados da empresa que precisam ser mantidos atualizados junto aos órgãos públicos.
+            <p></p>
+            .Atendimento a Exigências Específicas: Algumas obrigações acessórias são específicas de certos setores ou atividades, garantindo que as particularidades legais sejam observadas.
+            <p></p>
+            4. Exemplos Comuns de Obrigações Acessórias<p></p>
+            Existem centenas de obrigações acessórias, variando conforme o regime tributário, tipo de empresa e setor de atuação. As mais conhecidas no Brasil incluem:
+            <p></p>
+            .SPED (Sistema Público de Escrituração Digital): Conjunto de módulos digitais que englobam a escrituração fiscal, contábil, notas fiscais, etc. (Ex: SPED Fiscal/EFD ICMS/IPI, SPED Contábil/ECD, EFD Contribuições).
+            <p></p>
+            .eSocial: Sistema unificado para informações fiscais, previdenciárias e trabalhistas dos empregadores.
+            <p></p>
+            .DCTF (Declaração de Débitos e Créditos Tributários Federais): Informa débitos e créditos de tributos e contribuições federais.
+            <p></p>
+            .DIRF (Declaração do Imposto sobre a Renda Retido na Fonte): Informa pagamentos e retenções de Imposto de Renda.
+            <p></p>
+            .RAIS (Relação Anual de Informações Sociais): Informa dados sobre o vínculo empregatício.
+            <p></p>
+            .DEFIS (Declaração de Informações Socioeconômicas e Fiscais): Para empresas do Simples Nacional.
+            <p></p>
+            .GIA (Guia de Informação e Apuração do ICMS): Para empresas com Inscrição Estadual.
+
+            <div class="cta-buttons">
+                <a href="/contabilidade_walter/index.html#about" class="btn-primary">MAIS SOBRE NÓS</a>
+                <a href="/contabilidade_walter/index.html#services" class="btn-secondary">NOSSOS SERVIÇOS</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <h3>NOSSAS FERRAMENTAS</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Análise de Dados</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Relatórios Detalhados</span>
+                </div>
+                <!-- More tools... -->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script1.js"></script>
+</body>
+</html>

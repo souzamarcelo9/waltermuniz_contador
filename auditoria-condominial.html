@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Muniz Contador - Auditoria Condominial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #3a7d44; /* Green from reference */
+            --secondary: #f8f9fa;
+            --dark: #343a40;
+            --light: #ffffff;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: var(--light);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--secondary);
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Service Hero */
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://blogdaqualidade.com.br/wp-content/uploads/2019/01/entenda-os-principais-tipos-de-auditoria.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            padding: 3rem 0;
+            background: var(--secondary);
+        }
+
+        .service-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 3rem 0;
+        }
+
+        .service-content .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .content-left h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .content-right h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: var(--secondary);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .tool-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-content .container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Replace with hamburger menu in production */
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <div class="container">
+        <div class="logo">Walter<span> Contador</span></div>
+        <ul class="nav-links">
+            <li><a href="/contabilidade_walter/index.html">HOME</a></li>
+            <li><a href="/contabilidade_walter/index.html#about">SOBRE</a></li>
+            <li><a href="/contabilidade_walter/index.html#services">SERVIÇOS</a></li>
+            <li><a href="/contabilidade_walter/index.html#footer">PÁGINAS</a></li>
+            <li><a href="/contabilidade_walter/galeria.html">GALERIA</a></li>
+            <li><a href="/contabilidade_walter/index.html#contact">CONTATO</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="/contabilidade_walter/index.html">Home</a> / <a href="/contabilidade_walter/index.html#services">Nossos Serviços</a>
+    </div>
+</div>
+
+<!-- Service Hero -->
+<section class="service-hero">
+    <div class="container">
+        <h1>ADMINISTRAÇÃO DE CONDOMÍNIOS</h1>
+        <p class="subtitle">Soluções especializadas para sua gestão financeira</p>
+    </div>
+</section>
+
+<!-- Service Grid -->
+<section class="service-grid">
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>ANÁLISE COMPLETA</h3>
+            <p>Nós fazemos com cuidado histórico completo!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>GESTÃO FINANCEIRA</h3>
+            <p>Nós amamos o que fazemos!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>AUDITORIA CONDONMINIAL</h3>
+            <p>Fazemos para seus condomínios e empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="service-content">
+    <div class="container">
+        <div class="content-right">
+            <h2>Especialistas em Contabilidade Condominial</h2>
+            <p>
+                A administração de condomínios é o conjunto de serviços especializados que visam gerir, de forma profissional e eficiente, todos os aspectos financeiros, administrativos, operacionais e de convivência de um condomínio (seja ele residencial, comercial ou misto)
+                <p>
+                . O objeto de atuação principal desses serviços é assegurar o bom funcionamento, a valorização do patrimônio dos condôminos e a manutenção de um ambiente de convivência harmonioso e seguro para todos.
+                </p>
+                1. Gestão Financeira Transparente e Eficaz
+                Este é um pilar central da administração de condomínios. Ela envolve:
+
+                Elaboração e Gestão Orçamentária: Preparar e acompanhar o orçamento do condomínio, garantindo que as receitas cubram as despesas e que haja recursos para imprevistos e melhorias.
+
+                Emissão de Boletos e Cobrança: Gerar as taxas condominiais, controlar os pagamentos e realizar a cobrança de inadimplentes de forma profissional e legal.
+
+                Contas a Pagar e a Receber: Gerenciar o fluxo de caixa, pagando as contas do condomínio (água, luz, funcionários, fornecedores) e controlando todos os recebimentos.
+
+                Prestação de Contas: Apresentar relatórios financeiros detalhados e transparentes aos condôminos e ao síndico, geralmente em assembleias, mostrando como os recursos estão sendo utilizados.
+                <p></p>
+                2. Gestão Administrativa e Legal em Conformidade
+                A parte administrativa garante que o condomínio esteja sempre em dia com suas obrigações e regras:
+
+                Aplicação da Convenção e Regulamento Interno: Fazer cumprir as normas estabelecidas nos documentos legais do condomínio, garantindo a ordem e o respeito às regras de convivência.
+
+                Assessoria ao Síndico: Prestar suporte legal e prático ao síndico, auxiliando na tomada de decisões e na resolução de conflitos.
+
+                Gestão de Documentos: Organizar e manter em dia toda a documentação legal e administrativa do condomínio (contratos, atas de assembleia, registros fiscais).
+
+                Convocação e Condução de Assembleias: Preparar e auxiliar na realização das assembleias de condomínio, garantindo que sejam feitas de acordo com a lei e que as decisões sejam registradas corretamente.
+            <p></p>
+                3. Gestão de Pessoal e Recursos Humanos
+                Para condomínios com funcionários (zeladores, porteiros, faxineiros), a administração gerencia:
+
+                Contratação e Demissão: Auxiliar nos processos seletivos, admissão e desligamento de funcionários, seguindo a legislação trabalhista.
+
+                Folha de Pagamento e Encargos: Calcular e efetuar o pagamento de salários, férias, 13º salário e todos os encargos sociais (INSS, FGTS), evitando passivos trabalhistas.
+
+                Treinamento e Supervisão: Orientar a equipe do condomínio sobre suas funções e responsabilidades, buscando a melhoria contínua dos serviços.
+            <p></p>
+                4. Manutenção Patrimonial e Obras
+                A valorização do imóvel passa diretamente pela boa conservação das áreas comuns:
+
+                Manutenção Preventiva e Corretiva: Planejar e supervisionar a manutenção de elevadores, piscinas, jardins, sistemas elétricos e hidráulicos, e outras áreas comuns, garantindo sua funcionalidade e segurança.
+
+                Orçamentos e Contratação de Fornecedores: Pesquisar e negociar com empresas para a realização de serviços e obras, buscando o melhor custo-benefício para o condomínio.
+
+                Supervisão de Obras e Reformas: Acompanhar projetos de melhoria, garantindo que sejam executados conforme o planejado e dentro do orçamento.
+            <p></p>
+                5. Comunicação e Relacionamento com Condôminos
+                Uma boa administração promove a transparência e a boa convivência:
+
+                Canais de Comunicação: Manter canais eficientes de comunicação (portais online, avisos, e-mails) para informar os condôminos sobre a gestão, avisos e eventos.
+
+                Mediação de Conflitos: Atuar como um facilitador na resolução de desentendimentos entre moradores, buscando soluções amigáveis baseadas no regulamento interno.
+
+                Atendimento a Moradores: Estar disponível para dúvidas, sugestões e reclamações dos condôminos, prestando um atendimento rápido e eficiente.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="/contabilidade_walter/index.html#about" class="btn-primary">MAIS SOBRE NÓS</a>
+                <a href="/contabilidade_walter/index.html#services" class="btn-secondary">NOSSOS SERVIÇOS</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <h3>NOSSAS FERRAMENTAS</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Análise de Dados</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Relatórios Detalhados</span>
+                </div>
+                <!-- More tools... -->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script1.js"></script>
+</body>
+</html>

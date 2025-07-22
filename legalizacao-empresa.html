@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Muniz Contador - Legalização de Empresas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #3a7d44; /* Green from reference */
+            --secondary: #f8f9fa;
+            --dark: #343a40;
+            --light: #ffffff;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: var(--light);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--secondary);
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Service Hero */
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://blogdaqualidade.com.br/wp-content/uploads/2019/01/entenda-os-principais-tipos-de-auditoria.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            padding: 3rem 0;
+            background: var(--secondary);
+        }
+
+        .service-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 3rem 0;
+        }
+
+        .service-content .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .content-left h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .content-right h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: var(--secondary);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .tool-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-content .container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Replace with hamburger menu in production */
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <div class="container">
+        <div class="logo">Walter<span> Contador</span></div>
+        <ul class="nav-links">
+            <li><a href="/contabilidade_walter/index.html">HOME</a></li>
+            <li><a href="/contabilidade_walter/index.html#about">SOBRE</a></li>
+            <li><a href="/contabilidade_walter/index.html#services">SERVIÇOS</a></li>
+            <li><a href="/contabilidade_walter/index.html#footer">PÁGINAS</a></li>
+            <li><a href="/contabilidade_walter/galeria.html">GALERIA</a></li>
+            <li><a href="/contabilidade_walter/index.html#contact">CONTATO</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="/contabilidade_walter/index.html">Home</a> / <a href="/contabilidade_walter/index.html#services">Nossos Serviços</a>
+    </div>
+</div>
+
+<!-- Service Hero -->
+<section class="service-hero">
+    <div class="container">
+        <h1>Legalização de Empresas</h1>
+        <p class="subtitle">A Burocracia Necessária para Tirar seu Sonho do Papel</p>
+    </div>
+</section>
+
+<!-- Service Grid -->
+<section class="service-grid">
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>ANÁLISE COMPLETA</h3>
+            <p>Nós fazemos com cuidado histórico completo!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>GESTÃO FINANCEIRA</h3>
+            <p>Nós amamos o que fazemos!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>AUDITORIA CONDONMINIAL</h3>
+            <p>Fazemos para seus condomínios e empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="service-content">
+    <div class="container">
+        <div class="content-left">
+            <h2>Serviços de Legalização de Empresas</h2>
+
+            Os serviços de legalização de empresas, também conhecidos como abertura de empresas, são o conjunto de procedimentos e trâmites burocráticos que
+            transformam uma ideia de negócio em uma entidade legalmente constituída e apta a operar.
+            O objeto de atuação desses serviços é garantir que uma nova empresa (ou uma empresa existente que precise de alterações) esteja em conformidade com todas as leis, regulamentos e exigências dos órgãos públicos, tanto em nível federal, estadual quanto municipal.
+
+            <p></p>
+            1. Formalização e Registro da Empresa
+            A primeira e mais visível parte da legalização é a oficialização da existência da empresa. Isso inclui:
+            <p></p>
+            . Definição da Natureza Jurídica: Escolha do tipo societário mais adequado (EI, EIRELI, Sociedade Limitada, S.A., etc.), que impactará a responsabilidade dos sócios e a estrutura tributária.
+            <p></p>
+            . Elaboração do Contrato Social/Estatuto: Documento fundamental que define a razão social, endereço, capital social, objeto social (atividades), dados dos sócios e regras de funcionamento da empresa.
+            <p></p>
+            . Registro nos Órgãos Competentes: Inscrição na Junta Comercial ou Cartório de Registro de Pessoas Jurídicas, que confere personalidade jurídica à empresa.
+            <p></p>
+            2. Obtenção de Inscrições e Licenças Essenciais
+            Após o registro básico, é preciso que a empresa obtenha as permissões para operar:
+            <p></p>
+            . Cadastro Nacional da Pessoa Jurídica (CNPJ): O "RG" da empresa, emitido pela Receita Federal do Brasil, indispensável para todas as operações fiscais e legais.
+            <p></p>
+            . Inscrição Estadual (IE): Para empresas que realizam operações de circulação de mercadorias (indústria, comércio), é emitida pela Secretaria de Fazenda do Estado. Essencial para o recolhimento de ICMS.
+            <p></p>
+            . Inscrição Municipal (IM): Para empresas prestadoras de serviços, é emitida pela Prefeitura do município de atuação. Essencial para o recolhimento de ISS.
+            <p></p>
+            .Alvará de Funcionamento: Autorização concedida pela Prefeitura para que a empresa possa operar em determinado local, após a verificação das condições de segurança e zoneamento.
+            <p></p>
+            3. Licenciamentos Específicos e Ambientais
+            Dependendo da atividade exercida, a empresa precisará de licenças adicionais para operar:
+            <p></p>.Licenças Sanitárias: Para negócios na área de alimentação, saúde, produtos químicos, etc., emitidas pela Vigilância Sanitária (ANVISA ou órgãos estaduais/municipais).
+            <p></p>
+            .Licenças Ambientais: Para atividades com potencial impacto ambiental, emitidas por órgãos como IBAMA ou secretarias estaduais/municipais de meio ambiente.
+            <p></p>
+            .Licenças do Corpo de Bombeiros: Para garantir a segurança e conformidade com as normas de prevenção e combate a incêndio.
+            <p></p>
+            .Registros em Conselhos de Classe: Para profissões regulamentadas (ex: engenharia, medicina, contabilidade, advocacia).
+            <p></p>
+            4. Enquadramento Tributário e Fiscal
+            Uma parte crucial da legalização é definir como a empresa pagará seus impostos:
+            <p></p>
+            . Definição do Regime Tributário: Escolha entre Simples Nacional, Lucro Presumido ou Lucro Real, que impactará diretamente a carga tributária e a complexidade contábil. Uma escolha errada pode gerar custos desnecessários ou problemas fiscais.
+            <p></p>
+            . Cadastro no Sistema de Tributação: A formalização da escolha do regime junto aos órgãos fiscais.
+            <p></p>
+            5. Preparação para as Obrigações Acessórias
+            A legalização também prepara o terreno para as obrigações que a empresa terá mensalmente e anualmente:
+            <p></p>
+            <p>Cadastros em Sistemas Governamentais: Registro para envio de declarações fiscais e trabalhistas (eSocial, DCTF, SPED, etc.).</p>
+
+            <p>Configuração de Sistemas: Orientações para a emissão de notas fiscais eletrônicas e outros documentos fiscais.</p>
+
+            <div class="cta-buttons">
+                <a href="/contabilidade_walter/index.html#about" class="btn-primary">MAIS SOBRE NÓS</a>
+                <a href="/contabilidade_walter/index.html#services" class="btn-secondary">NOSSOS SERVIÇOS</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <h3>NOSSAS FERRAMENTAS</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Análise de Dados</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Relatórios Detalhados</span>
+                </div>
+                <!-- More tools... -->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script1.js"></script>
+</body>
+</html>

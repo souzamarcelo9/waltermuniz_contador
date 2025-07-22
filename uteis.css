@@ -1,0 +1,712 @@
+body,html {
+	/*	padding-top: 150px;*/
+	font-family: 'Myriad Pro Regular' !important;
+	padding: 0 !important;
+	margin-bottom: -13px !important;
+}
+.form-trabalhe {
+	border: 1px solid #ccc;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+.app_sindico {
+	border: 1px solid black;
+	text-align: center;
+	padding: 20px;
+	font-size: 16px;
+	height: 155px;
+}
+.app_sindico i{
+	font-size: 50px;
+	margin-bottom: 3px;
+}
+.app_sindico a{
+	display: block;
+	margin: 3px;
+}
+.form-trabalhe legend{
+	border: 0;
+	width: auto;
+	padding: 10px;
+	margin: 0;
+	color: #00aff0;
+}
+.azul {
+	color: #00aff0;
+}
+.justificado {
+	text-align: justify;
+}
+.nav-tabs li a{
+	color: #0085b2;;
+}
+.voltar-top a{
+	color: white;
+}
+.voltar-top a:hover{
+	color: grey;
+}
+.texto {
+	font-size: 16px !important;
+}
+.caracteristicas {
+	font-size: 16px;
+}
+.telefone-imovel {
+	background-color: #0085b2;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.detalhes td {
+	font-size: 16px;
+	line-height: 30px;
+}
+.titulo-interna:before {
+	/*opacity:0.8;*/
+}
+.titulo-interna {
+	height: 200px;
+	/*background-color: black;*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.barra-titulo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.barra-titulo2-imoveis {
+	background-color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.barra-titulo2-imoveis div{
+	font-size: 18px;
+	font-family: 'Myriad Pro Semibold';
+	color: #333;
+}
+.barra-titulo2-imoveis i{
+	width: 18px;
+	color: #999;
+	text-align: center;
+}
+.foto-imovel-interno {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.galeria-interna {
+	background-color: #0085b2;
+	padding: 5px;
+}
+.foto-imovel-interno-mini {
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.item-fotos {
+	margin: 2px;
+}
+.contato-imovel {
+	/*background-color: #003466;*/
+	color: white;
+}
+.contato-imovel table tr td{
+	/*background-color: #003466;*/
+	color: black;
+}
+.seta-left {
+	background-color: #0085b2;
+	line-height: 100px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.seta-right {
+	background-color: #0085b2;
+	line-height: 100px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.col-centered{
+	float: none !important;
+	margin: 0 auto !important;
+}
+.busca-home {
+	height: 120px;
+	background-color: #eee;
+	padding-top: 35px !important;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.btn-gr {
+	font-size: 16px !important;
+	color: white;
+	background-color: #003466;
+}
+.btn-gr:hover{
+	color: white !important;
+	background-color: #0085b2;
+}
+#btn-busca-home {
+	background-color: #003466;
+	color: white;
+	padding: 11px;
+	font-size: 20px;
+}
+#btn-busca-home:hover {
+	background-color: #0085b2;
+	color: white;
+}
+.select-busca-home {
+	height: 52px !important;
+	font-size: 20px !important;
+}
+#select-busca-home {
+	height: 52px;
+	font-size: 20px;
+}
+#input-busca-home {
+	padding: 25px;
+	font-size: 20px;
+}
+#owl-clientes .item{
+	border: 1px solid #ccc;
+	margin: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 100px;
+}
+#owl-clientes .item  img{
+	width: 80%;
+}
+#owl-imoveis-destaques .item{
+	margin: 5px;
+	text-align: center;
+}
+.navbar {
+	background-color: #fff;
+	height: 150px;
+}
+.espaco {
+	padding: 20px;
+}
+.center {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Myriad Pro Regular' !important;
+	text-align: center;
+}
+h1 hr {
+	border-top: 4px solid #00aff0;
+	width: 50px;
+	margin-top: 5px;
+}
+.h1-interno {
+	font-family: 'Myriad Pro Regular' !important;
+	text-align: left;
+	color: white;
+	/*	text-shadow: 0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff;*/
+}
+.h1-interno hr {
+	border-top: 4px solid #00aff0;
+	width: 50px;
+	margin-top: 5px;
+	float: left;
+}
+.h1-interno2 {
+	font-family: 'Myriad Pro Regular' !important;
+	text-align: left;
+	color: #333;
+	/*	text-shadow: 0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff;*/
+}
+.h1-interno2 hr {
+	border-top: 4px solid #00aff0;
+	width: 50px;
+	margin-top: 5px;
+	float: left;
+}
+.h1-imovel {
+	font-family: 'Myriad Pro Regular' !important;
+	text-align: left;
+	color: #333;
+	font-size: 30px;
+	/*	text-shadow: 0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff,0px 0px 20px #fff;*/
+}
+.h1-imovel hr {
+	border-top: 4px solid #00aff0;
+	width: 50px;
+	margin-top: 5px;
+	float: left;
+}
+.menu
+{
+	display: none;
+	width: 100%;
+	height: 70px;
+	background-color: #003466;
+	line-height: 70px;
+	color: #ccc;
+}
+.menu2 {
+	border-left: 2px solid #1d4c7a;
+	border-right: 2px solid #1d4c7a;
+	text-align: center;
+	padding: 0 !important;
+	padding-left: 3px !important;
+
+}
+.menu2 ul{
+	margin: 0;
+	padding: 0 !important;
+	list-style-type: none;
+
+}
+.menu2 li{
+	height: 70px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.menu2-linha {
+	border-left: 2px solid #1d4c7a;
+	margin-left:2px !important;
+	margin-right:2px !important; 
+}
+
+.selo-brand img {
+	width: 110px;
+	margin-top: 20px;
+}
+.navbar-brand {
+	margin-top: 10px;
+}
+.nav li {
+	margin-left: 4px;
+}
+.nav a:hover{
+	background-color: unset !important;
+}
+.nav a{
+	font-family: 'Myriad Pro Semibold';
+	color: #666;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.banner {
+	height: 500px;
+	/*background-color: black;*/
+	background-image: url('../imagens/banner_rio2.jpg');
+	/*background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;*//*
+	background-attachment: fixed;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+.servicos-home{
+	background-color: #0085b2;
+	padding: 40px;
+}
+.item-serv-home {
+	text-align: center !important;
+}
+.item-serv-home img{
+	border:8px solid white;
+	width: 80%;
+	margin-bottom: 20px;
+}
+.item-serv-home h4{
+	color: white;
+	height: 40px;
+}
+.item-serv-home p{
+	color: white;
+	margin-top: 20px;
+}
+.circulo {
+	border: 10px solid #b7e1f9;
+	padding: 40px;
+	margin:20px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+.circulo h3 {
+	color: #999;
+}
+.circulo img {
+	width: 50%;
+}
+.links {
+	background-color: #eee;
+/*	padding-top: 40px;
+padding-bottom: 40px;*/
+}
+.links ul {
+	padding: 0;
+}
+.links li{
+	list-style: none;
+	line-height: 30px;
+	/*    border-top: 1px solid #666;*/
+}
+
+.col-links img{
+	margin-bottom: 20px;
+	border:8px solid white;
+	width: 80%;
+}
+.menumobile ul{
+	padding-left: 10px;
+}
+.menumobile ul li{
+	border-bottom: 1px solid #2b3982;
+}
+.menumobile ul li a{
+	color: #fff;
+	line-height: 40px;
+	list-style-type: none;
+}
+.setas span{
+	font-size: 20px;
+}
+.foto-imovel {
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.texto-imovel {
+	background-color: #e2f2ff;
+	height: 150px;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.texto-imovel p {
+	font-family: 'Myriad Pro Semibold';
+}
+.texto-imovel span {
+	font-family: 'Myriad Pro Condensed';
+	
+}
+.texto-imovel h1 {
+	font-size: 20px;
+	padding: 0;
+	margin-top: 0;
+	color: #003466;
+}
+.pretoebranco:hover {
+	-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+.pretoebranco {
+	-webkit-transition: all .3s ease;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+.vibrante:hover {
+	-webkit-filter: brightness(1.1);
+	-moz-filter: brightness(1.1);
+	-ms-filter: brightness(1.1);
+	o-filter: brightness(1.1);
+	filter: brightness(1.1);
+	cursor: pointer;
+}
+.vibrante {
+	-webkit-transition: all .3s ease;
+}
+#hambuerguetopo {
+	display: none;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+/* COLUNA DE 5*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.col-xs-15 {
+	width: 20%;
+	float: left;
+}
+/* VERSÕES MOBILE */
+@media (max-width: 1200px) {
+	.menu2 li a {
+		padding-left: 33px !important;
+		padding-right: 33px !important;
+	}
+	.selo-brand img {
+		position: absolute;
+		margin-top: 40px;
+		width: 120px;
+	}
+}
+@media (min-width: 768px) {
+	.col-sm-15 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (max-width: 992px) {
+	#sejacli {
+		width: 25% !important;
+		height: auto !important;
+		margin-top: 100px !important;
+	}
+	#telefonestopo {
+		display: block;
+		position: relative;
+    	top: 63px;
+	}
+	.busca-home {
+		height: 210px;
+		background-color: #eee;
+		padding-top: 20px !important;
+		text-align: center;
+	}	
+	#btn-busca-home {
+		margin-top: 10px;
+	}
+	#input-busca-home {
+		margin-top: 10px;
+	}
+	.selo-brand img {
+		position: relative;
+		width: 75px;
+		float: right;
+		margin-top: 5px;
+	}
+	#hambuerguetopo {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	#navbar {
+		display: none !important;
+	}
+	.navbar {
+		height: 165px !important;
+		width: 100%;
+		padding-left:0 !important;
+		padding-right: 0 !important; 
+		position: fixed !important;
+		z-index: 9;
+		-webkit-box-shadow: 0px 21px 71px -28px rgba(0,0,0,0.63);
+		-moz-box-shadow: 0px 21px 71px -28px rgba(0,0,0,0.63);
+		box-shadow: 0px 21px 71px -28px rgba(0,0,0,0.63);
+	}
+	.navbar-brand {
+		text-align: center !important;
+	}
+	.banner {
+		height: 300px;
+		background-position: 0px 70px;
+	}
+	h1 {
+		text-align: center;
+	}
+	.site {
+		/*margin-left: 35px;*/
+	}
+
+	.navbar-brand {
+		margin-top: 0px;
+	}
+	.navbar-brand>img {
+		display: inline !important;
+		height: 44px;
+	}
+	.menumobile {
+		background-color: #003466;
+		height: 100%;
+		width: 230px;
+		-webkit-transition: margin-left 0.1s linear;
+		margin-left: -230px;
+		position: fixed;
+		z-index: 10;
+		display: block !important;
+		opacity:0.95;
+		-moz-opacity: 0.95;
+		filter: alpha(opacity=95);
+	}
+	.menumobile img{
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+	.menumobile_aberto {
+		-webkit-transition: margin-left 0.2s linear;
+		margin-left: 0;
+
+	}
+}
+@media (min-width: 992px) {
+	.col-md-15 {
+		width: 20%;
+		float: left;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-15 {
+		width: 20%;
+		float: left;
+	}
+}
+
+.menumobile {
+	display: none;
+}
+
+
+.form-rodape {
+	background-color: #333;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding: 5px;
+	width: 90%;
+	margin-left: 20px;
+}
+.btn-rodape {
+	background-color: #ccc;
+	border: 1px solid #333;
+	padding: 7px;
+	color: #333;
+	margin-right: 7px;
+
+}
+
+.home-info {
+	display: block;
+	width: 90%;
+	font-family: 'Myriad Pro Regular';
+	color: #333;
+	font-size: 16px;
+	margin-top: 5px;
+	/*border-top: 1px solid #666;*/
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.home-info:hover{
+	color: #666;
+}
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.luz {
+	display:none;
+	/*position:absolute;*/
+	position:fixed;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	z-index:1040;
+	background-color:#000;
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+.popup {
+	display:none;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius: 2px;
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	background:#fff;
+	left:50%;
+	padding:5px;
+	margin-left:-40%;
+	margin-top:5%;
+	position:absolute;
+/*	position:fixed;*/
+	width:80%;
+	z-index:5100;
+}
+.titulopopup {
+	width:100%;
+	height:40px;
+}
+.titulolistagem p{
+	margin-left:5px;
+	margin-top:-3px;
+	font-size:16px;
+	color:#222;
+	font-weight:bold;
+}
+.titulopopup a{
+	margin-top:9px;
+	float:right;
+	margin-right:4px;	
+}
+.tpopup{
+	float:left;
+	margin-left:4px;
+	margin-bottom:0;
+	margin-top:2px;
+	width:80%;
+}
+.conteudopopup {
+	/*border:1px solid #DDDDDD;*/
+	width:98%;
+	padding:1%;
+}
+.carregando{
+	width:100%;
+	height:32px;
+	text-align:center;	
+}
+.pretao {
+	color:#000;	
+}
+
+/* FONTS */
+@font-face {font-family: 'Myriad Pro Regular';font-style: normal;font-weight: normal;src: local('Myriad Pro Regular'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-REGULAR.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Condensed';font-style: normal;font-weight: normal;src: local('Myriad Pro Condensed'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-COND.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Semibold Italic';font-style: normal;font-weight: normal;src: local('Myriad Pro Semibold Italic'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Semibold';font-style: normal;font-weight: normal;src: local('Myriad Pro Semibold'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-SEMIBOLD.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Condensed Italic';font-style: normal;font-weight: normal;src: local('Myriad Pro Condensed Italic'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-CONDIT.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Bold Italic';font-style: normal;font-weight: normal;src: local('Myriad Pro Bold Italic'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-BOLDIT.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Bold Condensed Italic';font-style: normal;font-weight: normal;src: local('Myriad Pro Bold Condensed Italic'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Bold Condensed';font-style: normal;font-weight: normal;src: local('Myriad Pro Bold Condensed'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-BOLDCOND.woff') format('woff');}
+@font-face {font-family: 'Myriad Pro Bold';font-style: normal;font-weight: normal;src: local('Myriad Pro Bold'), url('https://grlider.com.br/assets/fonts/myriad-pro/MYRIADPRO-BOLD.woff') format('woff');}
+

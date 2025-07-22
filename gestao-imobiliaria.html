@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Muniz Contador - Gestão Imobiliária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #3a7d44; /* Green from reference */
+            --secondary: #f8f9fa;
+            --dark: #343a40;
+            --light: #ffffff;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: var(--light);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--secondary);
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Service Hero */
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://blogdaqualidade.com.br/wp-content/uploads/2019/01/entenda-os-principais-tipos-de-auditoria.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            padding: 3rem 0;
+            background: var(--secondary);
+        }
+
+        .service-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 3rem 0;
+        }
+
+        .service-content .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .content-left h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .content-right h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: var(--secondary);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .tool-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-content .container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Replace with hamburger menu in production */
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <div class="container">
+        <div class="logo">Walter<span> Contador</span></div>
+        <ul class="nav-links">
+            <li><a href="/contabilidade_walter/index.html">HOME</a></li>
+            <li><a href="/contabilidade_walter/index.html#about">SOBRE</a></li>
+            <li><a href="/contabilidade_walter/index.html#services">SERVIÇOS</a></li>
+            <li><a href="/contabilidade_walter/index.html#footer">PÁGINAS</a></li>
+            <li><a href="/contabilidade_walter/galeria.html">GALERIA</a></li>
+            <li><a href="/contabilidade_walter/index.html#contact">CONTATO</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="/contabilidade_walter/index.html">Home</a> / <a href="/contabilidade_walter/index.html#services">Nossos Serviços</a>
+    </div>
+</div>
+
+<!-- Service Hero -->
+<section class="service-hero">
+    <div class="container">
+        <h1>GESTÃO IMOBILIÁRIA</h1>
+        <p class="subtitle">A Ponte entre Pessoas e Seus Sonhos de Lar ou Investimento</p>
+    </div>
+</section>
+
+<!-- Service Grid -->
+<section class="service-grid">
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>ANÁLISE COMPLETA</h3>
+            <p>Nós fazemos com cuidado histórico completo!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>GESTÃO FINANCEIRA</h3>
+            <p>Nós amamos o que fazemos!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>AUDITORIA CONDONMINIAL</h3>
+            <p>Fazemos para seus condomínios e empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="service-content">
+    <div class="container">
+        <div class="content-right">
+            <h2>Especialistas em Gestão Imobiliária</h2>
+
+            Os serviços imobiliários englobam uma vasta gama de atividades profissionais dedicadas à compra, venda, aluguel, administração e avaliação de imóveis, sejam eles residenciais, comerciais, industriais ou rurais. O objeto de atuação principal desses serviços é facilitar e profissionalizar as transações e a gestão de propriedades, garantindo segurança, transparência e valor para proprietários, compradores, vendedores e locatários. Eles atuam como intermediários e consultores especializados em um dos mercados mais importantes e complexos da economia.
+            <p></p>
+            1. Intermediação de Compra e Venda de Imóveis<p></p>
+            Este é um dos serviços mais conhecidos e centrais do setor. Ele envolve:
+            <p></p>
+            Avaliação de Imóveis: Determinar o valor de mercado justo de uma propriedade, considerando fatores como localização, estado de conservação, tamanho, infraestrutura e tendências de mercado.
+            <p></p>
+            Captação e Divulgação: Atração de imóveis para venda e sua posterior promoção através de diversos canais (portais imobiliários, redes sociais, marketing direcionado), alcançando potenciais compradores.
+            <p></p>
+            Assessoria na Venda: Orientar o proprietário em todas as etapas, desde a precificação, documentação necessária, negociação, até o fechamento do negócio.
+            <p></p>
+            Assessoria na Compra: Ajudar o comprador a encontrar o imóvel ideal que se encaixe em suas necessidades e orçamento, pesquisar opções, agendar visitas e negociar as condições.
+            <p></p>
+            Suporte Jurídico e Documental: Orientar sobre a complexa documentação imobiliária (certidões, escrituras, registros), garantindo que a transação seja legal e segura, livre de pendências.
+            <p></p>
+            2. Intermediação e Administração de Aluguéis<p></p>
+            Para proprietários que buscam rentabilizar seus imóveis através da locação, os serviços incluem:
+            <p></p>
+            Avaliação para Locação: Determinar o valor do aluguel de acordo com o mercado.
+            <p></p>
+            Captação de Inquilinos: Divulgação do imóvel e busca por locatários qualificados, realizando análises de crédito e antecedentes.
+            <p></p>
+            Elaboração e Gestão de Contratos de Aluguel: Redigir contratos que protejam ambas as partes, gerenciar prazos, reajustes e renovações.
+            <p></p>
+            Gestão Financeira do Aluguel: Cobrança de aluguéis e encargos (condomínio, IPTU), repasse ao proprietário e controle de inadimplência.
+            <p></p>
+            Administração de Manutenção: Acompanhamento de vistorias de entrada e saída, e coordenação de reparos e manutenções necessárias no imóvel durante o período de locação.
+            <p></p>
+            3. Consultoria e Assessoria Imobiliária<p></p>
+            Além das transações diretas, os serviços imobiliários oferecem suporte especializado para diversas situações:
+            <p></p>
+            Análise de Mercado: Fornecer dados e insights sobre as tendências do mercado imobiliário, auxiliando em decisões de investimento ou desinvestimento.
+            <p></p>
+            Viabilidade de Empreendimentos: Consultoria para construtoras e incorporadoras na análise de terrenos, projetos e potencial de vendas.
+            <p></p>
+            Assessoria para Investidores: Aconselhamento sobre as melhores oportunidades de investimento em imóveis, seja para renda passiva ou valorização patrimonial.
+            <p></p>
+            Regularização de Imóveis: Auxiliar na resolução de pendências documentais, registrais ou fiscais de propriedades.
+            <p></p>
+            4. Serviços Adicionais e Inovação<p></p>
+            O setor imobiliário também se adapta às novas tecnologias e necessidades do mercado:
+            <p></p>
+            Vistorias Digitais e Tours Virtuais: Utilização de tecnologia para apresentar imóveis de forma mais imersiva e eficiente.
+            <p></p>
+            Marketing Imobiliário Digital: Estratégias avançadas para promover imóveis online e alcançar um público mais amplo.
+            <p></p>
+            Gestão de Patrimônio Imobiliário: Para grandes proprietários ou famílias, a gestão completa de um portfólio de imóveis.
+            <p></p>
+            <div class="cta-buttons">
+                <a href="/contabilidade_walter/index.html#about" class="btn-primary">MAIS SOBRE NÓS</a>
+                <a href="/contabilidade_walter/index.html#services" class="btn-secondary">NOSSOS SERVIÇOS</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <h3>NOSSAS FERRAMENTAS</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Análise de Dados</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Relatórios Detalhados</span>
+                </div>
+                <!-- More tools... -->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script1.js"></script>
+</body>
+</html>

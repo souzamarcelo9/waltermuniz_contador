@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Muniz Contador - Contabilidade Empresarial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #3a7d44; /* Green from reference */
+            --secondary: #f8f9fa;
+            --dark: #343a40;
+            --light: #ffffff;
+            --accent: #ffc107;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Navigation */
+        .top-nav {
+            background: var(--light);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background: var(--secondary);
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumbs a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Service Hero */
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://blogdaqualidade.com.br/wp-content/uploads/2019/01/entenda-os-principais-tipos-de-auditoria.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--light);
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            padding: 3rem 0;
+            background: var(--secondary);
+        }
+
+        .service-grid .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Service Content */
+        .service-content {
+            padding: 3rem 0;
+        }
+
+        .service-content .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .content-left h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .content-right h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: var(--secondary);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .tool-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .service-content .container {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none; /* Replace with hamburger menu in production */
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <div class="container">
+        <div class="logo">Walter<span> Contador</span></div>
+        <ul class="nav-links">
+            <li><a href="/contabilidade_walter/index.html">HOME</a></li>
+            <li><a href="/contabilidade_walter/index.html#about">SOBRE</a></li>
+            <li><a href="/contabilidade_walter/index.html#services">SERVIÇOS</a></li>
+            <li><a href="/contabilidade_walter/index.html#footer">PÁGINAS</a></li>
+            <li><a href="/contabilidade_walter/galeria.html">GALERIA</a></li>
+            <li><a href="/contabilidade_walter/index.html#contact">CONTATO</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <a href="/contabilidade_walter/index.html">Home</a> / <a href="/contabilidade_walter/index.html#services">Nossos Serviços</a>
+    </div>
+</div>
+
+<!-- Service Hero -->
+<section class="service-hero">
+    <div class="container">
+        <h1>CONTABILIDADE EMPRESARIAL</h1>
+        <p class="subtitle">Soluções especializadas para sua gestão financeira</p>
+    </div>
+</section>
+
+<!-- Service Grid -->
+<section class="service-grid">
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <h3>ANÁLISE COMPLETA</h3>
+            <p>Nós fazemos com cuidado histórico completo!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>GESTÃO FINANCEIRA</h3>
+            <p>Nós amamos o que fazemos!</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-building"></i>
+            </div>
+            <h3>AUDITORIA CONDONMINIAL</h3>
+            <p>Fazemos para seus condomínios e empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Content -->
+<section class="service-content">
+    <div class="container">
+        <div class="content-right">
+            <h2>Contabilidade Empresarial</h2>
+            Contabilidade Empresarial: Essencial para o Sucesso e a Conformidade do seu Negócio.
+            <p></p>
+            A contabilidade empresarial vai muito além de apenas registrar despesas e receitas; ela é uma ferramenta estratégica e vital para a gestão e o crescimento de qualquer negócio. Seu objeto de atuação principal é o patrimônio da empresa, ou seja, o conjunto de bens, direitos e obrigações que a organização possui.
+
+            Para entender em detalhes, a contabilidade empresarial atua em diversas frentes:
+            <p></p>
+
+            1. Registro e Organização das Transações
+            O ponto de partida é o registro sistemático e cronológico de todas as operações financeiras e econômicas da empresa. Isso inclui:
+            <p></p>
+            Entradas: Receitas de vendas, recebimentos de clientes, aportes de capital.
+            <p></p>
+            Saídas: Pagamento de fornecedores, salários, aluguéis, impostos, despesas operacionais, investimentos.
+            <p></p>
+            Esse registro não é feito de forma aleatória; segue normas e princípios contábeis rigorosos, garantindo que as informações sejam precisas, completas e verificáveis.
+            <p></p>
+            2. Geração de Informações Financeiras e Econômicas Confiáveis
+            <p></p>
+            A partir dos registros, a contabilidade processa os dados para gerar relatórios e demonstrações financeiras essenciais. Os mais conhecidos são:
+            <p></p>
+            Balanço Patrimonial (BP): Uma fotografia da situação financeira da empresa em um dado momento, mostrando o que ela possui (ativos), o que deve (passivos) e o capital próprio (Patrimônio Líquido).
+            <p></p>
+            Demonstração do Resultado do Exercício (DRE): Apresenta o desempenho da empresa em um período específico, detalhando receitas, custos, despesas e, por fim, o lucro ou prejuízo.
+            <p></p>
+            Demonstração do Fluxo de Caixa (DFC): Mostra as movimentações de entrada e saída de dinheiro (caixa) em um período, revelando a capacidade da empresa de gerar liquidez.
+            <p></p>
+            Essas demonstrações são a base para a análise da saúde financeira e econômica do negócio.
+            <p></p>
+            3. Suporte à Tomada de Decisões Estratégicas<p></p>
+            Este é um dos aspectos mais críticos do objeto de atuação da contabilidade. Com as informações geradas, os gestores podem:
+            <p></p>
+            Avaliar o Desempenho: Entender se a empresa está sendo lucrativa, se os custos estão controlados, se há desperdícios.
+            <p></p>
+            Planejar Investimentos: Analisar a viabilidade de novos projetos, expansões ou aquisições.
+            <p></p>
+            Controlar o Orçamento: Comparar o que foi planejado com o que realmente aconteceu, ajustando planos conforme necessário.
+            <p></p>
+            Negociar com Terceiros: Ter dados concretos para apresentar a bancos (para empréstimos), investidores ou fornecedores.
+            <p></p>
+            Definir Preços: Entender os custos envolvidos na produção ou prestação de serviços para precificar corretamente.
+            <p></p>
+            A contabilidade transforma números brutos em inteligência de negócios, permitindo decisões mais embasadas e estratégicas.
+            <p></p>
+            4. Cumprimento das Obrigações Legais e Fiscais (Compliance)<p></p>
+            Um pilar fundamental da contabilidade empresarial é assegurar que a empresa esteja em conformidade com a legislação vigente. Isso envolve:
+            <p></p>
+            Cálculo e Recolhimento de Impostos: Apuração correta de tributos como IRPJ, CSLL, PIS, COFINS, ICMS, ISS, entre outros.
+            <p></p>
+            Envio de Declarações: Preparação e submissão de todas as declarações exigidas pelos órgãos fiscalizadores (Receita Federal, Secretarias de Fazenda Estaduais e Municipais).
+            <p></p>
+            Atendimento a Auditorias: Preparação de documentos e informações para auditorias internas e externas.
+            <p></p>
+            Obrigações Trabalhistas e Previdenciárias: Gerenciamento de folha de pagamento, encargos sociais e benefícios dos colaboradores.
+            <p></p>
+            A correta atuação contábil neste ponto evita multas, autuações e problemas legais que podem comprometer a continuidade do negócio.
+            <p></p>
+            5. Análise e Projeção Financeira<p></p>
+            Além de registrar o que já aconteceu, a contabilidade empresarial também se volta para o futuro. Com base em dados históricos e projeções de mercado, ela auxilia na:
+            <p></p>
+            Análise de Tendências: Identificar padrões de receitas, despesas e lucros ao longo do tempo.
+            <p></p>
+            Previsões Financeiras: Estimar resultados futuros, como faturamento e lucros esperados.
+            <p></p>
+            Avaliação de Riscos: Identificar potenciais ameaças financeiras e propor medidas preventivas.<p></p>
+
+            <div class="cta-buttons">
+                <a href="/contabilidade_walter/index.html#about" class="btn-primary">MAIS SOBRE NÓS</a>
+                <a href="/contabilidade_walter/index.html#services" class="btn-secondary">NOSSOS SERVIÇOS</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <h3>NOSSAS FERRAMENTAS</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Análise de Dados</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Relatórios Detalhados</span>
+                </div>
+                <!-- More tools... -->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script1.js"></script>
+</body>
+</html>
