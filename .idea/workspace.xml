@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272176ac-3eb9-4a1a-9ca7-d97305ef3632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/galeria.html" beforeDir="false" afterPath="$PROJECT_DIR$/galeria.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auditoria-condominial.html" beforeDir="false" afterPath="$PROJECT_DIR$/auditoria-condominial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contabilidade-empresarial.html" beforeDir="false" afterPath="$PROJECT_DIR$/contabilidade-empresarial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legalizacao-empresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/legalizacao-empresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obrigacoes-acessorias.html" beforeDir="false" afterPath="$PROJECT_DIR$/obrigacoes-acessorias.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.legalizacao-empresa.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -58,12 +63,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.legalizacao-empresa.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/contabilidade_walter/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="legalizacao-empresa.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/contabilidade_walter/legalizacao-empresa.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.legalizacao-empresa.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -83,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753076357774</updated>
       <workItem from="1753076358906" duration="37692000" />
-      <workItem from="1753197160025" duration="3147000" />
+      <workItem from="1753197160025" duration="4876000" />
     </task>
     <servers />
   </component>
