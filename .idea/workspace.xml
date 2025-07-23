@@ -7,7 +7,6 @@
     <list default="true" id="272176ac-3eb9-4a1a-9ca7-d97305ef3632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.27812.2" />
       </set>
     </attachedChunks>
   </component>
@@ -94,7 +93,8 @@
       <workItem from="1753197160025" duration="4876000" />
       <workItem from="1753202866775" duration="699000" />
       <workItem from="1753204132464" duration="335000" />
-      <workItem from="1753209391693" duration="8279000" />
+      <workItem from="1753209391693" duration="8757000" />
+      <workItem from="1753309730284" duration="587000" />
     </task>
     <servers />
   </component>
